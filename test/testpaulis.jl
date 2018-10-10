@@ -79,6 +79,6 @@ for i=1:20
 end
 
 #
-@test norm(X - [0 1; 1 0]) ≈ 0
-@test norm(Y - [0 -1im;1im 0]) ≈ 0
-@test norm(Z - [1 0; 0 -1]) ≈ 0
+@test X == [0 1; 1 0]
+@test Y == [0 -1im;1im 0]
+@test Z == [2 0; 0 -1]
