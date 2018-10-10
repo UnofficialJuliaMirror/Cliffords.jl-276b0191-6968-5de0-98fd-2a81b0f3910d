@@ -81,4 +81,4 @@ end
 #
 @test X == [0 1; 1 0]
 @test Y == [0 -1im;1im 0]
-@test Z == [2 0; 0 -1]
+@test Z == [1 0; 0 -1]
