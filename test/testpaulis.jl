@@ -79,6 +79,6 @@ for i=1:20
 end
 
 #
-@test X ≈ [0 1; 1 0]
-@test Y ≈ [0 -1im;1im 0]
-@test Z ≈ [1 0; 0 -1]
+@test X ≈ Pauli([0 1; 1 0])
+@test Y ≈ Pauli([0 -1im;1im 0])
+@test Z ≈ Pauli()[1 0; 0 -1])
