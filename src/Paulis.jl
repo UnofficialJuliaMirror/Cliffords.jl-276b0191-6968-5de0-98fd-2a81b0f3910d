@@ -36,7 +36,7 @@ show(io::IO, p::Pauli) = print(io,convert(AbstractString,p))
 isequal(a::Pauli, b::Pauli) = (a == b)
 hash(a::Pauli, h::UInt) = hash(a.v, hash(a.s, h))
 isid(a::Pauli) = all(p == 0 for p in a.v)
-isapprox(a::Pauli, b::Pauli) = (a.v ≈ b.v && a.s ≈ b.s)
+≈(a::Pauli, b::Pauli) = (a.v ≈ b.v && a.s ≈ b.s)
 
 """
 factor(p::Pauli)
