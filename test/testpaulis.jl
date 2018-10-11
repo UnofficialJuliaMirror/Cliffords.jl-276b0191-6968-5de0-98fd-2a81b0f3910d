@@ -81,4 +81,4 @@ end
 #
 @test X ≈ Pauli([0 1; 1 0])
 @test Y ≈ Pauli([0 -1im;1im 0])
-@test Z ≈ Pauli()[1 0; 0 -1])
+@test Z ≈ Pauli([1 0; 0 -1])
